@@ -1,15 +1,15 @@
 
 config general
-	option start_delay '0'
+	option start_delay '5'
 
 config transparent_proxy
-	option main_server 'nil'
-	option udp_relay_server 'nil'
 	option local_port '1234'
+	option udp_relay_server 'same'
+	option main_server 'nil'
 
 config socks5_proxy
-	option server 'nil'
 	option local_port '1080'
+	option server 'cfg0a4a8f'
 
 config port_forward
 	option server 'nil'
@@ -25,6 +25,11 @@ config servers
 	option encrypt_method 'rc4-md5'
 	option plugin_protocol 'origin'
 	option plugin_obfs 'plain'
+	option alias 'SS'
+	option plugin_obfs_param 'bing.com'
 
 config access_control
 	option self_proxy '1'
+	option wan_bp_list '/etc/ignore.list'
+	option lan_target 'SSR_SPEC_WAN_AC'
+
