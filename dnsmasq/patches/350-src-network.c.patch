@@ -1,0 +1,12 @@
+diff -ur a/src/network.c b/src/network.c
+--- a/src/network.c	2017-07-28 22:42:10.217757860 +0800
++++ b/src/network.c	2017-07-29 09:02:19.478204047 +0800
+@@ -1535,7 +1535,7 @@
+ 	    serv->sfd->used = 1;
+ 	}
+       
+-      if (!(serv->flags & SERV_NO_REBIND) && !(serv->flags & SERV_LITERAL_ADDRESS))
++      if (!(serv->flags & (SERV_NO_REBIND | SERV_IS_REGEX)) && !(serv->flags & SERV_LITERAL_ADDRESS))
+ 	{
+ 	  if (++count > SERVERS_LOGGED)
+ 	    continue;

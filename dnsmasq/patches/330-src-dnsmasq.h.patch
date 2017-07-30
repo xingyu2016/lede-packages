@@ -1,0 +1,52 @@
+--- a/src/dnsmasq.h	2017-07-28 22:42:10.217757860 +0800
++++ b/src/dnsmasq.h	2017-07-29 11:28:49.432968541 +0800
+@@ -136,6 +136,10 @@
+ #include <priv.h>
+ #endif
+ 
++#ifdef HAVE_REGEX
++#  include <pcre.h>
++#endif
++
+ /* daemon is function in the C library.... */
+ #define daemon dnsmasq_daemon
+ 
+@@ -488,6 +492,7 @@
+ #define SERV_LOOP           8192  /* server causes forwarding loop */
+ #define SERV_DO_DNSSEC     16384  /* Validate DNSSEC when using this server */
+ #define SERV_GOT_TCP       32768  /* Got some data from the TCP connection */
++#define SERV_IS_REGEX      65536  /* server entry is a regex */
+ 
+ struct serverfd {
+   int fd;
+@@ -507,6 +512,12 @@
+   char interface[IF_NAMESIZE+1];
+   struct serverfd *sfd; 
+   char *domain; /* set if this server only handles a domain. */ 
++
++#ifdef HAVE_REGEX
++  pcre *regex;
++  pcre_extra *pextra;
++#endif
++
+   int flags, tcpfd, edns_pktsz;
+   unsigned int queries, failed_queries;
+ #ifdef HAVE_LOOP
+@@ -515,9 +526,17 @@
+   struct server *next; 
+ };
+ 
++#define IPSET_IS_DOMAIN 1
++#define IPSET_IS_REGEX 2
++
+ struct ipsets {
+   char **sets;
+   char *domain;
++#ifdef HAVE_REGEX
++  pcre *regex;
++  pcre_extra *pextra;
++#endif
++  int flags;
+   struct ipsets *next;
+ };
+ 

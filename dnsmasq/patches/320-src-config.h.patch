@@ -1,0 +1,36 @@
+--- a/src/config.h	2017-07-28 22:42:10.217757860 +0800
++++ b/src/config.h	2017-07-29 10:50:51.679191975 +0800
+@@ -105,6 +105,10 @@
+    a build-dependency on libnetfilter_conntrack, but the resulting binary will
+    still run happily on a kernel without conntrack support.
+ 
++HAVE_REGEX
++   Define this if you want to link against lib pcre to get regex
++   support in "address=" matches
++ 
+ HAVE_IPSET
+     define this to include the ability to selectively add resolved ip addresses
+     to given ipsets.
+@@ -180,6 +184,9 @@
+ /* #define HAVE_LIBIDN2 */
+ /* #define HAVE_CONNTRACK */
+ /* #define HAVE_DNSSEC */
++/* #define HAVE_REGEX */
++
++#define HAVE_REGEX
+ 
+ 
+ /* Default locations for important system files. */
+@@ -393,6 +400,12 @@
+ "no-"
+ #endif
+ "DBus "
++
++#ifndef HAVE_REGEX
++"no-"
++#endif
++"regex "
++
+ #ifndef LOCALEDIR
+ "no-"
+ #endif
