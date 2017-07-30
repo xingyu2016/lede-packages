@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=LuCI Support for dns2socks
 LUCI_DEPENDS:=+dns2socks
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include $(TOPDIR)/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 
