@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=cpulimit configuration module
 LUCI_DEPENDS:=+cpulimit
 
-include $(TOPDIR)/luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 #applications/luci-app-cpulimit/
