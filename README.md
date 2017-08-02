@@ -1,2 +1,2 @@
 # lede-packages
-copy $(TOPDIR)/feeds/luci/luci.mk to $(TOPDIR)
+Let's do it.
