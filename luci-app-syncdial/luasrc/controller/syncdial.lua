@@ -12,7 +12,7 @@ function index()
 	end
 
 	local page
-	page = entry({"admin", "services", "syncdial"}, cbi("syncdial"), _("创建多拨接口"))
+	page = entry({"admin", "services", "syncdial"}, cbi("syncdial"), _("创建多拨接口"), 610)
 	page.dependent = true
 
 	page = entry({"admin", "services", "macvlan_redial"}, call("redial"), nil)

@@ -8,7 +8,7 @@ function index()
 		return
 	end
 	
-	local page = entry({"admin", "services", "cpulimit"}, cbi("cpulimit"), luci.i18n.translate("cpulimit"), 65)
+	local page = entry({"admin", "services", "cpulimit"}, cbi("cpulimit"), luci.i18n.translate("cpulimit"), 11)
 	page.i18n = "cpulimit"
 	page.dependent = true
 	

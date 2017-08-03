@@ -6,5 +6,5 @@ function index()
 		return
 	end
 	
-	entry({"admin", "services", "adbyby"}, cbi("adbyby"), _("广告屏蔽大师"), 56).dependent = true
+	entry({"admin", "services", "adbyby"}, cbi("adbyby"), _("Adbyby"), 31).dependent = true
 end

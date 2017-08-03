@@ -10,7 +10,7 @@ function index()
 
 	entry({"admin", "services", "shadowsocksr"},
 		alias("admin", "services", "shadowsocksr", "general"),
-		_("ShadowSocksR"), 11).dependent = true
+		_("SS/SSR"), 21).dependent = true
 
 	entry({"admin", "services", "shadowsocksr", "general"},
 		cbi("shadowsocksr/general"),
