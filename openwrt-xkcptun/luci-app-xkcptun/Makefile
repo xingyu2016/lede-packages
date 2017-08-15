@@ -29,8 +29,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-app-xkcptun
 	SECTION:=luci
-	CATEGORY:=LuCI
-	SUBMENU:=3. Applications
+	CATEGORY:=hzqim
 	TITLE:=LuCI support for xkcptun
 	URL:=https://github.com/liudf0716/xkcptun
 	MAINTAINER:=Lars Gierth <larsg@systemli.org>

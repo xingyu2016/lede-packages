@@ -14,7 +14,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
 	SECTION:=net
-	CATEGORY:=Network
+	CATEGORY:=hzqim
 	TITLE:=Powerful adblock module to block ad.
 	DEPENDS:=+libstdcpp
 	URL:=http://www.adbyby.com/

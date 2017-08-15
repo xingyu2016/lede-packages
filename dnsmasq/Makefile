@@ -34,7 +34,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/dnsmasq/Default
   SECTION:=net
-  CATEGORY:=Base system
+  CATEGORY:=hzqim
   TITLE:=DNS and DHCP server
   URL:=http://www.thekelleys.org.uk/dnsmasq/
   USERID:=dnsmasq=453:dnsmasq=453

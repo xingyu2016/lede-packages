@@ -21,7 +21,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/vlmcsd
 	SECTION:=net
-	CATEGORY:=Network
+	CATEGORY:=hzqim
 	TITLE:=vlmcsd for OpenWRT
 	URL:=http://forums.mydigitallife.info/threads/50234
 	DEPENDS:=+libpthread

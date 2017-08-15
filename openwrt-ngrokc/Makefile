@@ -15,8 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/ngrokc
 	SECTION:=net
-	CATEGORY:=Network
-	SUBMENU:=Web Servers/Proxies
+	CATEGORY:=hzqim
 	TITLE:=Secure tunnels to localhost(C++ port)
 	URL:=https://github.com/dosgo/ngrok-c
 	DEPENDS:=+libc +libpthread +libopenssl +libstdcpp

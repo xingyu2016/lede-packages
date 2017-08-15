@@ -21,8 +21,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-app-shadowsocksr
 	SECTION:=luci
-	CATEGORY:=LuCI
-	SUBMENU:=3. Applications
+	CATEGORY:=hzqim
 	TITLE:=LuCI Support for shadowsocksR-libev
 	PKGARCH:=all
 	DEPENDS:=+iptables +ipset

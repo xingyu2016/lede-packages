@@ -9,7 +9,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
 	CATEGORY:=Network
-	SUBMENU:=Luci
+	SUBMENU:=hzqim
 	TITLE:=LuCI support for Kcptun
 	PKGARCH:=all
 endef

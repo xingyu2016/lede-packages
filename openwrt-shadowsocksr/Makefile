@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocksr-libev
-PKG_VERSION:=r1534
-PKG_RELEASE:=a32c032cb1e424686748fb4fa3a2beae1b342334
+PKG_VERSION:=3.0.6
+PKG_RELEASE:=bf324d848cffa0b5b567cfa6d31c0fb1ec096ec6
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
@@ -32,7 +32,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/shadowsocksr-libev/Default
 	SECTION:=net
-	CATEGORY:=Network
+	CATEGORY:=hzqim
 	TITLE:=Lightweight Secured Socks5 Proxy $(2)
 	URL:=https://github.com/shadowsocksr/shadowsocksr-libev
 	VARIANT:=$(1)

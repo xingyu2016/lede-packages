@@ -16,8 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-app-vlmcsd
 	SECTION:=luci
-	CATEGORY:=LuCI
-	SUBMENU:=3. Applications
+	CATEGORY:=hzqim
 	TITLE:=LuCI app for openwrt-vlmcsd
 	DEPENDS:=+vlmcsd
 	PKGARCH:=all

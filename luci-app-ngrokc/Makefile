@@ -17,7 +17,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-app-ngrokc
 	CATEGORY:=Network
-	SUBMENU:=Luci
+	SUBMENU:=hzqim
 	TITLE:=LuCI support for ngrokc.
 	PKGARCH:=all
 	DEPENDS:=+ngrokc

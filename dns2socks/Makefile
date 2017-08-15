@@ -9,7 +9,7 @@ include $(INCLUDE_DIR)/package.mk
 PKG_UNPACK=mkdir -p $(PKG_BUILD_DIR); $(CP) ./src/* $(PKG_BUILD_DIR)/
 
 define Package/dns2socks
-  CATEGORY:=Network
+  CATEGORY:=hzqim
   TITLE:=dns2socks
   DEPENDS:=+libpthread
 endef

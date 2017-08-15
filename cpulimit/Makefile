@@ -14,7 +14,7 @@ PKG_REV:=cabeb9947ccddd9a6e6ba14503e2a33063ac1b21
 include $(INCLUDE_DIR)/package.mk
 
 define Package/cpulimit
-  CATEGORY:=Utilities
+  CATEGORY:=hzqim
   TITLE:=cpulimit
   URL:=https://github.com/opsengine/cpulimit.git
 endef
